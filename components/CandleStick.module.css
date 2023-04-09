@@ -1,0 +1,50 @@
+.small-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-div {
+  background-color: hsl(10, 79%, 65%);
+  /* height: 10rem; */
+  width: 4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chart-div:hover {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.value {
+  font-size: 1.4rem;
+  color: hsl(33, 100%, 98%);
+  background-color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(0, -115%);
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.day {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #888;
+}
+
+@media (max-width: 405px) {
+  .chart-div {
+    width: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .chart-div {
+    width: 2.5rem;
+  }
+}
